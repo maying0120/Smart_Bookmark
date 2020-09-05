@@ -1,0 +1,122 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=IC930-BDME5-XCLJ0-BEHNV-XBRKW-HKE2D
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.24.1
+Toolchain Path:  E:\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.26.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Mao\Desktop\fannal\合并程序1\合并程序1\Template.uvprojx
+Project File Date:  09/02/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'E:\keil\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_hd.s...
+compiling stm32f10x_it.c...
+compiling main.c...
+.\Public\ku.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c(57): warning:  #223-D: function "GPIO_Configuration1" declared implicitly
+  	GPIO_Configuration1();
+User\main.c(58): warning:  #223-D: function "GPIO_Configuration2" declared implicitly
+  GPIO_Configuration2();
+User\main.c(59): warning:  #223-D: function "OLED_Init" declared implicitly
+  OLED_Init();
+User\main.c(61): warning:  #69-D: integer conversion resulted in truncation
+  SysTick_Init(72000);
+User\main.c(68): warning:  #223-D: function "Fill_RAM" declared implicitly
+  Fill_RAM(0x00,0x00);	
+User\main.c(77): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(week==1 && hour>=0 && hour<=6)
+User\main.c(88): warning:  #186-D: pointless comparison of unsigned integer with zero
+  		if(day==1 && hour>=0 && hour<=6)
+User\main.c(206): warning:  #223-D: function "kaiji" declared implicitly
+  		      kaiji();
+User\main.c(207): warning:  #223-D: function "Delay" declared implicitly
+  		      Delay(10);
+User\main.c(210): warning:  #223-D: function "qieping" declared implicitly
+  		qieping();
+User\main.c(219): warning:  #223-D: function "qieping" declared implicitly
+  				qieping();	
+User\main.c(227): warning:  #223-D: function "display_Chinese1616" declared implicitly
+  				display_Chinese1616(0x10 , 0x00, 0, 0x1f);
+User\main.c(267): warning:  #223-D: function "display_Chinese1616" declared implicitly
+  			 display_Chinese1616(0x20 , 0x00, 10, 0xffff);
+User\main.c(274): warning:  #223-D: function "Fill_Block" declared implicitly
+  			  Fill_Block((u16)(5),(u16)(h[0]+5),(u16)(20),(u16)(28),0xF8,0x1F);			  
+User\main.c(275): warning:  #223-D: function "OLED_ShowNum" declared implicitly
+  		OLED_ShowNum((u16)(h[0]+7),(u16)(20),Book[0],3,8,0xf81f);
+User\main.c(304): warning:  #223-D: function "qieping" declared implicitly
+  			qieping();
+User\main.c(310): warning:  #223-D: function "Show_biaoge" declared implicitly
+  	Show_biaoge();
+User\main.c(313): warning:  #223-D: function "Fill_Block" declared implicitly
+  	  Fill_Block((u16)(16),(u16)(16+14),(u16)(21),(u16)(26),0xF8,0x1F);
+User\main.c(37): warning:  #177-D: variable "k"  was declared but never referenced
+  int k;
+User\main.c(41): warning:  #177-D: variable "t"  was declared but never referenced
+  int t=32;
+User\main.c(42): warning:  #177-D: variable "cardid"  was declared but never referenced
+  int cardid=0;
+User\main.c(49): warning:  #177-D: variable "kai"  was declared but never referenced
+  int kai=1;
+User\main.c(50): warning:  #177-D: variable "guan"  was declared but never referenced
+  int guan=0;
+User\main.c(51): warning:  #177-D: variable "qie"  was declared but never referenced
+  int qie;
+User\main.c: 25 warnings, 0 errors
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling SysTick.c...
+compiling system.c...
+compiling ds1302.c...
+compiling printf.c...
+compiling stm32f10x_usart.c...
+compiling nfc.c...
+compiling sys.c...
+compiling ku.c...
+Public\ku.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+Public\ku.c(896): warning:  #177-D: variable "n"  was declared but never referenced
+  unsigned char m=0,n=0;	
+Public\ku.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=12872 RO-data=372 RW-data=24440 ZI-data=3400  
+FromELF: creating hex file...
+".\Obj\Template.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  E:\keil\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:07
+</pre>
+</body>
+</html>
